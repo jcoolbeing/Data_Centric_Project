@@ -1,0 +1,18 @@
+<table>
+    <tr>
+        <th>Module ID</th>
+        <th>Name</th>
+        <th>Credits</th>
+        <th>Update</th>
+        <th>Students</th>
+    </tr>
+<% modules.forEach((module)=>{%>
+    <tr>
+        <td><%= module.mid %></td>
+        <td><%= module.name %></td>
+        <td><%= module.credits %></td>
+        <a href="/module/edit">Update</a>
+        <a href="">List</a>
+    </tr>
+    <% }) %>
+</table>
